@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*BRANCO*/
+    --branco: #FFFFFF;
+
+    /*CIANOS*/
+    --ciano: #1EA0FA;
+    --ciano-claro: #02E0F2;
+    --ciano-cinza: #91B3F2;
+
+    /*AZUIS*/
+    --azul: #4503CB;
+    --azul-claro: #0333FF;
+    --azul-escuro: #2f0461;
+
+    /*ROSAS*/
+    --rosa: #FF11A4;
+    --rosa-claro: #FB56F2;
+    --rosa-avermelhado: #FD005E;
+    --rosa-pastel: #F458B2;
+    --vermelho-rosado: #FC002B;
+
+    /*ROXOS*/
+    --roxo: #C407BB;
+    --roxo-claro: #E536D1;
+    --roxo-pastel: #C767D5;
+    --roxo-pastel2: #933ca0;
+    --roxo-rosado: #B7007F;
+    --roxo-azulado: #780ABA;
+
+    /*DEGRADÊS*/
+    --roxo-ciano: linear-gradient(45deg, var(--roxo) 20%, var(--ciano));
+    --roxo-ciano2: linear-gradient(90deg, var(--roxo) 30%, var(--ciano));
+    --roxo-azulado-rosa-avermelhado: linear-gradient(45deg, var(--roxo-azulado) 20%, var(--rosa-avermelhado));
+    --roxo-azulado-rosa-avermelhado2: linear-gradient(90deg, var(--roxo-azulado) 30%, var(--rosa-avermelhado));
+    --roxoclaro-cianoclaro: linear-gradient(45deg, var(--roxo-claro) 20%, var(--ciano-claro));
+    --roxoazulado-vermelhorosado: linear-gradient(45deg, var(--roxo-azulado), var(--vermelho-rosado));
+    --roxopastel-roxo: linear-gradient(90deg, var(--roxo-pastel), var(--roxo-pastel2));
+
+    /*FONTE*/
+    --teko: 'Teko', sans-serif;
+}
+
+html, body{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}

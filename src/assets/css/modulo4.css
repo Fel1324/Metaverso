@@ -1,0 +1,247 @@
+html, body{
+    background: var(--roxo-ciano2);
+    height: 100%;
+}
+
+.main__section{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 5rem 5rem 5rem;
+}
+
+.main__article{
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.main__titulo{
+    background: var(--ciano-claro);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-family: var(--teko);
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+
+.section__titulo{
+    color: var(--ciano-claro);
+    font-size: 3.6rem;
+    font-family: var(--teko);
+    margin-bottom: 1.8rem;
+}
+
+.main__texto{
+    color: var(--branco);
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin-right: 5rem;
+}
+
+b{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.main__texto:nth-child(2n){
+    color: var(--branco);
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 5rem;
+    margin-right: 0rem;
+}
+
+.section__img{
+    width: 800px;
+    height: 700px;
+}
+
+.section__link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__link{
+    color: var(--ciano-claro);
+    background: transparent;
+    border: 2px solid var(--ciano-claro);
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-family: var(--teko);
+    padding: 1rem;
+}
+
+.main__link:nth-child(2){
+    text-transform: none;
+}
+
+.main__link:hover{
+    color: var(--vermelho-rosado);
+    background: var(--roxo-azulado-rosa-avermelhado);
+    border: 2px solid var(--vermelho-rosado);
+}
+
+@media screen and (max-width: 1600px) {
+    .section__img{
+        width: 600px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .main__texto{
+        font-size: 1.4rem;
+    }
+
+    .main__texto:nth-child(2n){
+        font-size: 1.4rem;
+    }
+
+    .section__img{
+        width: 500px;
+        height: 400px;
+    }
+
+    .section__link{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__link{
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .main__link:last-child{
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .main__titulo{
+        font-size: 4rem;
+    }
+
+    .section__titulo{
+        font-size: 3rem;
+    }
+
+    .main__texto{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+
+    .main__texto:nth-child(2n){
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+
+    .section__img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .main__link{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__texto{
+        margin-right: 1.6rem;
+    }
+
+    .main__texto:nth-child(2n){
+        margin-left: 1.6rem;
+    }
+
+    .section__img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .main__link{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__article{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .main__texto{
+        margin-bottom: 2rem;
+        margin-right: 0rem;
+    }
+
+    .main__texto:nth-child(2n){
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        margin-right: 0rem;
+    }
+
+    .main__texto:nth-child(2n){
+        margin-left: 0rem;
+    }
+
+    .main__link{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main__section{
+        width: 100%;
+        height: 100%;
+        padding: 3rem 2rem 5rem 2rem;
+    }
+
+    .main__titulo{
+        font-size: 3.6rem;
+    }
+
+    .section__titulo{
+        font-size: 2.6rem;
+    }
+
+    .main__texto{
+        text-align: start;
+    }
+
+    .main__texto:nth-child(2){
+        text-align: start;
+    }
+
+     .main__link{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main__titulo{
+        font-size: 2.8rem;
+    }
+
+    .section__titulo{
+        font-size: 2.4rem;
+    }
+
+    .section__img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .main__link{
+        font-size: 1.2rem;
+    }
+}

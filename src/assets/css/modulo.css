@@ -1,0 +1,109 @@
+html, body{
+    background: var(--roxo-ciano2);
+    height: 100%;
+}
+
+.main__section{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 8rem 5rem 8rem;
+}
+
+.main__article{
+    margin-bottom: 7rem;
+}
+
+.main__titulo{
+    background: var(--ciano-claro);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-family: var(--teko);
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.section__titulo{
+    color: var(--ciano-claro);
+    font-size: 3.6rem;
+    font-family: var(--teko);
+    margin-bottom: 1rem;
+}
+
+.main__texto{
+    color: var(--branco);
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.main__link{
+    color: var(--ciano-claro);
+    background: transparent;
+    border: 2px solid var(--ciano-claro);
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-family: var(--teko);
+    padding: 1rem;
+}
+
+.main__link:hover{
+    color: var(--vermelho-rosado);
+    background: var(--roxo-azulado-rosa-avermelhado);
+    border: 2px solid var(--vermelho-rosado);
+}
+
+@media screen and (max-width: 1440px) {
+    .main__section{
+        padding: 2rem 5rem 5rem 5rem;
+    }
+   
+    .main__texto{
+        color: var(--branco);
+        font-size: 1.4rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .main__section{
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    .main__titulo{
+        font-size: 4rem;
+    }
+    
+    .section__titulo{
+        font-size: 3rem;
+    }
+   
+    .main__texto{
+        color: var(--branco);
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .main__link{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .section__titulo{
+        font-size: 2.2rem;
+    }
+
+    .main__link{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}

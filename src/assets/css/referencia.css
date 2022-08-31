@@ -1,0 +1,145 @@
+html, body{
+    background: var(--roxo-ciano2);
+    height: 100%;
+}
+
+.main__section{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 5rem 5rem 5rem;
+}
+
+.main__article{
+    margin-bottom: 5rem;
+}
+
+.article__titulo{
+    background: var(--ciano-claro);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-family: var(--teko);
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.article__membros{
+    color: var(--branco);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.article__membros::before{
+    content: '⭐';
+    margin-right: .5rem;
+}
+
+.article__references{
+    color: var(--branco);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.fim, .agradecimento{
+    color: var(--ciano-claro);
+    font-family: var(--teko);
+    font-size: 10rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.fim{
+    margin: 0;
+}
+
+.agradecimento{
+    margin-top: 0;
+}
+
+.main__link{
+    color: var(--ciano-claro);
+    background: transparent;
+    border: 2px solid var(--ciano-claro);
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-family: var(--teko);
+    padding: 1rem;
+}
+
+.main__link:hover{
+    color: var(--vermelho-rosado);
+    background: var(--roxo-azulado-rosa-avermelhado);
+    border: 2px solid var(--vermelho-rosado);
+}
+
+@media screen and (max-width: 700px) {
+    .main__section{
+        padding: 3rem 2rem 5rem 2rem;
+    }
+
+    .article__references{
+        font-size: 1.1rem;
+    }
+
+    .fim, .agradecimento{
+        font-size: 5rem;
+    }
+
+    .main__link{
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .article__titulo{
+        font-size: 3rem;
+    }
+    
+    .article__membros{
+        font-size: 1.4rem;
+    }
+
+    .article__references{
+        font-size: .75rem;
+    }
+
+    .fim, .agradecimento{
+        font-size: 3rem;
+    }
+
+    .main__link{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main__section{
+        padding: 3rem 1rem 5rem 1rem;
+    }
+
+    .article__titulo{
+        font-size: 2.4rem;
+    }
+    
+    .article__membros{
+        font-size: 1.2rem;
+    }
+
+    .article__references{
+        font-size: .55rem;
+    }
+
+    .fim, .agradecimento{
+        font-size: 2.6rem;
+    }
+
+    .main__link{
+        font-size: 1.4rem;
+    }
+}
